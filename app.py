@@ -85,7 +85,7 @@ with project_tab2:
 
     portfolio_losses = np.load('portfolio_losses.npy')
     frontier_data = pd.read_csv('frontier_data.csv')
-    with open('risk_narrative.txt') as f:
+    with open('risk_narrative.txt', encoding= 'utf-8', errors= 'ignore') as f:
         risk_narrative = f.read()
 
     mean_loss = np.mean(portfolio_losses)
