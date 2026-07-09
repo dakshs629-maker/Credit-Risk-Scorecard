@@ -264,7 +264,7 @@ with project_tab2:
 
     # ---------- AI Risk Summary ----------
     with tab3:
-        with open('risk_narrative.txt') as f:
+        with open('risk_narrative.txt', encoding= 'utf-8', errors= 'ignore') as f:
             static_narrative = f.read()
 
         st.markdown(static_narrative)
